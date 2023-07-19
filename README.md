@@ -90,7 +90,7 @@ To run the project, execute the following command:
 
 - GitHub: [@akezeth](https://github.com/akezeth)
 - Twitter: [@akezeth](https://twitter.com/akezeth)
-- LinkedIn: [Aklilu Mekonnen](https://www.linkedin.com/in/akliu-mekonnen/)
+- LinkedIn: [Aklilu Mekonnen](https://www.linkedin.com/in/aklilu-mekonnen/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
