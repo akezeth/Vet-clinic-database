@@ -8,4 +8,4 @@ create table animals (
 );
 
 alter table animals 
-	add species integer;
+	add species varchar(10);
