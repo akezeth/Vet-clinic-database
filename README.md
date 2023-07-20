@@ -16,7 +16,6 @@
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Usage](#usage)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -75,12 +74,6 @@ To clone this repository on your machine run `https://github.com/akezeth/Vet-cli
 To run the project, execute the following command:
 
 - Use PSQL terminal or pgAdmin 4 to run commands
-
-### Deployment
-
-- Coming Soon
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
