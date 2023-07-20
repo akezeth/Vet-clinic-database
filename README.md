@@ -16,7 +16,6 @@
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Usage](#usage)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -37,8 +36,8 @@ This is a relational database that stores information about animals.
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="#">POSTGRESQL</a></li>
-    <li><a href="#">pgAdmin 4</a></li>
+    <li><a href="https://www.postgresql.org/">POSTGRESQL</a></li>
+    <li><a href="https://www.pgadmin.org/">pgAdmin 4</a></li>
   </ul>
 </details>
 
@@ -75,12 +74,6 @@ To clone this repository on your machine run `https://github.com/akezeth/Vet-cli
 To run the project, execute the following command:
 
 - Use PSQL terminal or pgAdmin 4 to run commands
-
-### Deployment
-
-- Coming Soon
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
