@@ -36,8 +36,8 @@ This is a relational database that stores information about animals.
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="#">POSTGRESQL</a></li>
-    <li><a href="#">pgAdmin 4</a></li>
+    <li><a href="https://www.postgresql.org/">POSTGRESQL</a></li>
+    <li><a href="https://www.pgadmin.org/">pgAdmin 4</a></li>
   </ul>
 </details>
 
