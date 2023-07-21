@@ -187,3 +187,13 @@ inner join animals a on v.animal_id = a.id
 inner join vets ve on v.vet_id = ve.id
 left join specializations s on ve.id = s.vet_id and a.species_id = s.species_id
 where s.vet_id is null;
+
+select s.name as species_name, count(*) as visit_count
+from animals a
+inner join visits v on a.id = v.animal_id
+inner join vets ve on v.vet_id = ve.id
+inner join species s on a.species_id = s.id
+where ve.name = 'Maisy Smith'
+group by s.name
+order by visit_count desc
+limit 1;
