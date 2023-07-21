@@ -129,3 +129,71 @@ from owners join animals on animals.owners_id = owners.id
 group by owners.id
 order by num_of_animals desc
 limit 1;
+
+select a.name as animal_name
+from animals a
+inner join visits
+v on a.id = v.animal_id
+inner join vets ve on v.vet_id = ve.id
+where ve.name = 'William Tatcher'
+order by v.visit_date desc
+limit 1;
+
+select count(distinct a.id) as animal_count
+from animals a
+    inner join visits v on a.id = v.animal_id
+    inner join vets ve on v.vet_id = ve.id
+where ve.name = 'Stephanie Mendez';
+
+select v.id, v.name, v.age, v.date_of_graduation, s.name as specialty
+from vets v
+    left join specializations sp on v.id = sp.vet_id
+    left join species s on sp.species_id = s.id
+order by v.id;
+
+select a.name as animal_name
+from animals a
+    inner join visits v on a.id = v.animal_id
+    inner join vets ve on v.vet_id = ve.id
+where ve.name = 'Stephanie Mendez'
+    and v.visit_date between '2020-04-01' and '2020-08-30';
+
+select a.name as animal_name, count(v.animal_id) as visit_count
+from animals a
+    inner join visits v on a.id = v.animal_id
+group by a.name
+order by visit_count desc
+limit 1;
+
+select a.name as animal_name, v.visit_date
+from animals a
+inner join visits
+v on a.id = v.animal_id
+inner join vets ve on v.vet_id = ve.id
+where ve.name = 'Maisy Smith'
+order by v.visit_date asc
+limit 1;
+
+select a.name as animal_name, v.visit_date, ve.name as vet_name, ve.age as vet_age
+from animals a
+    inner join visits v on a.id = v.animal_id
+    inner join vets ve on v.vet_id = ve.id
+order by v.visit_date desc
+limit 1;
+
+select count(*) as mismatched_specialties_count
+from visits v
+inner join animals a on v.animal_id = a.id
+inner join vets ve on v.vet_id = ve.id
+left join specializations s on ve.id = s.vet_id and a.species_id = s.species_id
+where s.vet_id is null;
+
+select s.name as species_name, count(*) as visit_count
+from animals a
+inner join visits v on a.id = v.animal_id
+inner join vets ve on v.vet_id = ve.id
+inner join species s on a.species_id = s.id
+where ve.name = 'Maisy Smith'
+group by s.name
+order by visit_count desc
+limit 1;
