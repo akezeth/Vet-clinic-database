@@ -70,4 +70,6 @@ create table visits(
 	foreign key (vet_id) references vets(id) on delete cascade
 );
 
-vet_clinics=# ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+create index index_visits_animal_id on visits (animal_id);
