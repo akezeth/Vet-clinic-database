@@ -69,3 +69,5 @@ create table visits(
 	foreign key (animal_id) references animals(id) on delete cascade,
 	foreign key (vet_id) references vets(id) on delete cascade
 );
+
+vet_clinics=# ALTER TABLE owners ADD COLUMN email VARCHAR(120);
