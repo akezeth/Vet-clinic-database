@@ -85,6 +85,11 @@ To run the project, execute the following command:
 - Twitter: [@akezeth](https://twitter.com/akezeth)
 - LinkedIn: [Aklilu Mekonnen](https://www.linkedin.com/in/aklilu-mekonnen/)
 
+👤 **Enobong Isong**
+- GitHub: [@githubhandle](https://github.com/Enoisong)
+- Twitter: [@twitterhandle](https://twitter.com/Enobongmisong)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/enobong-isong/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
