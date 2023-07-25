@@ -11,4 +11,11 @@ create table medical_histories (
 	status varchar(100),	 
 );
 
+create table treatments (
+	id integer not null primary key,
+    type varchar(100),    
+	name varchar(100),	 
+);
+
+
  
