@@ -34,5 +34,11 @@ create table invoice_items (
 );
 
 
+create table treatment_histories (
+	medical_history_id integer not null foreign key references medical_histories(id),
+	treatment_id integer not null foreign key references treatments(id)
+);
+
+
 
  
