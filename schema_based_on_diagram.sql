@@ -25,6 +25,14 @@ create table invoices (
 	medical_history_id not null foreign key references medical_histories(id)
 );
 
+create table invoice_items (
+	id integer not null primary key,
+	unit_price decimal,
+	quantity integer,
+	total_price decimal,
+	invoice_id integer not null foreign key references invoices(id)
+);
+
 
 
  
